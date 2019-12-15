@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--id 和 name 的区别-->
+    <bean id="userService" class="com.mydemo1.UserServiceImpl" scope="singleton" lazy-init="true">
+    </bean>
+
+    <bean id="car" class="com.mydemo1.Car" scope="singleton">
+        <property name="name" value="特斯拉"/>
+        <property name="price" value="100"/>
+
+    </bean>
+
+</beans>
